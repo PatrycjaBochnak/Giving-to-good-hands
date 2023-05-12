@@ -2,9 +2,6 @@ import React from 'react';
 import HomeHeader from './HomeHeader';
 import HomeThreeColumns from './HomeThreeColumns';
 
-import React from 'react';
-import './App.css';
-
 function App() {
   return (
     <div className="container">
