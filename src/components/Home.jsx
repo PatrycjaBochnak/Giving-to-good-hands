@@ -2,8 +2,10 @@ import React from 'react';
 import HomeHeader from './HomeHeader';
 import HomeThreeColumns from './HomeThreeColumns';
 
-function App() {
+function Home() {
   return (
+    <>
+    <div><p>Test</p></div>
     <div className="container">
       <header className="header">
         <div className="header">
@@ -43,7 +45,8 @@ function App() {
         {/* footer content */}
       </footer>
     </div>
+    </>
   );
 }
 
-export default App;
+export default Home;
