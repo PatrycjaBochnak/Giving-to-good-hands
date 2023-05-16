@@ -1,6 +1,6 @@
 import React from 'react';
-import HomeHeader from './HomeHeader';
-import HomeThreeColumns from './HomeThreeColumns';
+import HomeHeader from './homeHeader';
+import HomeThreeColumns from './homeThreeColumns';
 
 function Home() {
   return (

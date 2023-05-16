@@ -1,48 +1,30 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
-import Home from "./components/Home";
-import HomeHeader from "./components/HomeHeader";
-import HomeThreeColumns from "./components/HomeThreeColumns";
+import Home from "./components/home";
+import NavBar from "./components/navbar";
+import './App.css';
 
+const Layout = () => {
+  return (
+    <NavBar>
+      <Outlet />
+    </NavBar>
+  );
+};
 function App() {
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <Routes>
-          <Link to="/login">Login in</Link>
-          <Link to="/register">Sign up</Link>
-          <Route path="/" element={<Home />} />
-          <ScrollLink to="HomeThreeColumns" smooth={true} duration={500}>
-            <HomeThreeColumns />
-          </ScrollLink>
-          <ScrollLink to="homeHeader" smooth={true} duration={500}>
-            <HomeHeader />
-          </ScrollLink>
-          <Route
-            path="/login"
-            element={
-              <div className="error404">
-                <h1 className="errorError">ERROR 404</h1>
-                <h2 className="errorText">
-                  Stay calm! Site is under construction
-                </h2>{" "}
-              </div>
-            }
-          />
-          <Route
-            path="/register"
-            element={
-              <div className="error404">
-                <h1 className="errorError">ERROR 404</h1>
-                <h2 className="errorText">
-                  Stay calm! Site is under construction
-                </h2>{" "}
-              </div>
-            }
-          />
+          <Route element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="login" element={<LogIn />} />
+            <Route path="register" element={<Register />} />
+            <Route path="logout" element={<LogOutView />} />
+            <Route path="givingThingsBack" element={<GivingThingsBack />} />
+          </Route>
         </Routes>
-      </Router>
+      </BrowserRouter>
     </>
   );
 }

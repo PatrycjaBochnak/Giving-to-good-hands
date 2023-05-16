@@ -1,0 +1,32 @@
+@import "../../../scss/settings/fonts";
+@import "../../../scss/settings/colors";
+
+.about-us-text {
+  background-color: $white-color;
+  width: calc(958px - 301px);
+  height: calc(100% - 371px);
+  padding: 186px 152px 185px 149px;
+  &-title {
+    font-family: $font-base;
+    font-size: 38px;
+    letter-spacing: -0.76px;
+    color: $black-color;
+    margin-bottom: 15px;
+    font-weight: normal;
+  }
+  &-inText {
+    font-family: $font-base;
+    font-size: 33px;
+    letter-spacing: -0.6;
+    color: $black-color;
+    font-weight: 300;
+    line-height: 45px;
+    margin: 55px 0 40px 0;
+  }
+  &-signature {
+    background-image: url("../../../assets/Signature.svg");
+    width: 209px;
+    height: 149px;
+    margin-left: calc(597px - 149px);
+  }
+}
