@@ -1,8 +1,8 @@
 import React from "react";
 
-const AboutUsText = ({ AboutUsTitle, aboutUsTextingText }) => (
+const AboutUsText = ({ aboutUsTitle, aboutUsTextingText }) => (
   <div className="about-us-text">
-    <h3 className="about-us-text-title">{AboutUsTitle}</h3>
+    <h3 className="about-us-text-title">{aboutUsTitle}</h3>
     <p className="about-us-text-inText">{aboutUsTextingText}</p>
     <div className="about-us-text-signature" />
   </div>

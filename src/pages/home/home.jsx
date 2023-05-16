@@ -7,6 +7,10 @@ function Home() {
     <div className="home">
       <HomeHeader />
       <HomeThreeColumns />
+      <SimpleSteps />
+      <AboutUs />
+      <WhoWeHelp />
+      <Contact />
     </div>
   );
 }
