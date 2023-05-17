@@ -1,0 +1,25 @@
+@import '../../../scss/settings/fonts';
+@import '../../../scss/settings/colors';
+
+
+.buttonsBox {
+    width: 250px;
+    border: 2px;
+    padding: 13px 51px;
+
+    &__Item {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $black-color;
+        font-size: 36px;
+        letter-spacing: 0.76px;
+        word-wrap: break-word;
+        font-family: $font-base;
+        font-weight: 300;
+    }
+
+}
+
+.buttonsBox:nth-child(2) {
+    margin-left: 44px;
+}

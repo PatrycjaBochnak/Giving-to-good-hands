@@ -1,0 +1,9 @@
+@import "../../../scss/settings/fonts";
+@import "../../../scss/settings/colors";
+
+.button-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}

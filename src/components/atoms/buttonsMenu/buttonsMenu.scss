@@ -1,0 +1,17 @@
+@import "../../../scss/settings/fonts";
+@import "../../../scss/settings/colors";
+
+.button-item {
+  .button {
+    font-size: 18px;
+    padding: 9px 20px;
+    color: $black-color;
+    text-decoration: none;
+    font-family: $font-base;
+    border: 0.75px solid white;
+  }
+
+  .button:hover {
+    border: 0.75px solid $black-color;
+  }
+}

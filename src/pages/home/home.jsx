@@ -5,14 +5,12 @@ import Foundations from "../../components/organisms/foundations/foundations";
 import Contact from "../../components/organisms/contact/contact";
 import Footer from "../../components/organisms/footer/footer";
 import AboutUs from "../../components/organisms/aboutUs/aboutUs";
-import Start from "../../components/organisms/start/start";
-import NavBar from "../../components/organisms/navbar/navbar";
+import Header from "../../components/organisms/header/header";
 
 function HomeHeader() {
   return (
     <div className="home">
-      <NavBar />
-      <Start />
+      <Header />
       <HomeThreeColumns />
       <SimpleSteps />
       <AboutUs />
