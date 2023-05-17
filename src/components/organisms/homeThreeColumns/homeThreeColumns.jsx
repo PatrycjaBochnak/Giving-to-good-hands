@@ -2,9 +2,7 @@ import React from 'react';
 
 function HomeThreeColumns() {
   return (
-    <header>
-      {/* zawar4tosc */}
-    </header>
+  <div className='home-three-columns'>Home 3 columns</div>
   );
 }
 

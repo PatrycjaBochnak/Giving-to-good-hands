@@ -1,7 +1,10 @@
 import React from "react";
-import { BrowserRouter as Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/home";
-import "./App.css";
+import Login from "./pages/login/login";
+import Register from "./pages/register/register";
+import Logout from "./pages/logout/logout";
+import GivingThingsBack from "./pages/givingThingsBack/givingThingsBack";
 
 function App() {
   return (
@@ -9,9 +12,9 @@ function App() {
       <BrowserRouter>
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="login" element={<LogIn />} />
+            <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
-            <Route path="logout" element={<LogOut />} />
+            <Route path="logout" element={<Logout />} />
             <Route path="givingThingsBack" element={<GivingThingsBack />} />
         </Routes>
       </BrowserRouter>
