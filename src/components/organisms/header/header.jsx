@@ -3,7 +3,7 @@ import HeaderPicture from "../../atoms/photoHeader/photoHeader";
 import RightPart from "../../molecules/rightPart/rightPart";
 
 const Header = () =>
- <header id='header' className="header">
+ <header className="header">
  <HeaderPicture />
  <RightPart />
  </header>

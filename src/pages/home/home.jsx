@@ -3,7 +3,6 @@ import HomeThreeColumns from "../../components/organisms/homeThreeColumns/homeTh
 import SimpleSteps from "../../components/organisms/simpleSteps/simpleSteps";
 import Foundations from "../../components/organisms/foundations/foundations";
 import Contact from "../../components/organisms/contact/contact";
-import Footer from "../../components/organisms/footer/footer";
 import AboutUs from "../../components/organisms/aboutUs/aboutUs";
 import Header from "../../components/organisms/header/header";
 
@@ -16,7 +15,6 @@ function HomeHeader() {
       <AboutUs />
       <Foundations />
       <Contact />
-      <Footer />
     </div>
   );
 }

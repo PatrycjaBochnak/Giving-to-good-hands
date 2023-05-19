@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/home";
 import Login from "./pages/login/login";
 import Register from "./pages/register/register";
@@ -8,17 +8,18 @@ import GivingThingsBack from "./pages/givingThingsBack/givingThingsBack";
 
 function App() {
   return (
-    <>
+    <div className="app">
+      <Outlet />
       <BrowserRouter>
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="login" element={<Login />} />
-            <Route path="register" element={<Register />} />
-            <Route path="logout" element={<Logout />} />
-            <Route path="givingThingsBack" element={<GivingThingsBack />} />
+          <Route path="/" element={<Home />} />
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+          <Route path="logout" element={<Logout />} />
+          <Route path="givingThingsBack" element={<GivingThingsBack />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
