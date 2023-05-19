@@ -1,0 +1,15 @@
+@import '../../../scss/settings/fonts';
+@import '../../../scss/settings/colors';
+
+.who-we-help {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+        font-size: 38px;
+        font-family: $font-base;
+        letter-spacing: -0.76px;
+        color: $black-color;
+    }
+}

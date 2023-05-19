@@ -2,7 +2,7 @@ import React from "react";
 import AboutUsImg from "../../atoms/aboutUsImg/aboutUsImg";
 import AboutUsText from "../../atoms/aboutUsText/aboutUsText";
 
-const AboutUsBar = () => (
+const AboutUs = () => (
   <div id="about" className="about-us-bar">
     <AboutUsText
       aboutUsTitle="About Us"
@@ -12,4 +12,4 @@ const AboutUsBar = () => (
   </div>
 );
 
-export default AboutUsBar;
+export default AboutUs;

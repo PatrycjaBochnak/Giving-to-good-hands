@@ -1,0 +1,22 @@
+@import '../../../scss/settings/fonts';
+@import '../../../scss/settings/colors';
+
+.who-we-help {
+    &-button {
+        background-color: white;
+        font-family: $font-base;
+        color: $black-color;
+        font-size: 24px;
+        border: 3px;
+        padding: 12px 21px;
+        width: 100%;
+    }
+
+    &-button:nth-child(2) {
+        margin: 0 20px;
+    }
+
+    &-button:hover {
+        border: $border;
+    }
+}

@@ -1,0 +1,51 @@
+@import '../../../scss/settings/fonts';
+@import '../../../scss/settings/colors';
+
+
+.who-we-help-list-item {
+    margin-top: 34px;
+    width: 1334px;
+
+    &-content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .items {
+            color: $black-color;
+            align-self: center;
+            font-family: $font-alt;
+            font-weight: lighter;
+            font-size: 18px;
+        }
+    }
+
+    .organization {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-name {
+            color: $black-color;
+            font-family: $font-alt;
+            font-weight: lighter;
+            font-size: 26px;
+            margin-bottom: 6px;
+        }
+
+        &-name {
+            color: $black-color;
+            margin-bottom: 31px;
+            font-family: $font-alt;
+            font-weight: lighter;
+            font-size: 18px;
+            font-style: italic;
+        }
+    }
+}
+
+.who-we-help-list-item:nth-child(1),
+.who-we-help-list-item:nth-child(2) {
+    border-bottom: 3px;
+}

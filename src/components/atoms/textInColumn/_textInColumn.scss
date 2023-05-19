@@ -1,0 +1,11 @@
+@import '../../../scss/settings/fonts';
+@import '../../../scss/settings/colors';
+
+.text-column {
+    font-family: $font-alt;
+    font-size: 16px;
+    font-weight: lighter;
+    color: $black-color;
+    letter-spacing: -0.32px;
+    line-height: 25px;
+}
