@@ -1,12 +1,14 @@
 import React from "react";
-import WhoWeHelpButton from "../../atoms/weWeHelpButton/whoWeHelpButton";
-import WhoWeHelpListItem from "../../atoms/weWeHelpListItem/whoWeHelpListItem";
-
-const WhoWeHelp = ({ whoWeHelpTitle }) => 
-<div id="help" className="who-we-help">
-    <h3 className="who-we-help-title">{ whoWeHelpTitle } </h3>
-    <WhoWeHelpButton />
-    <WhoWeHelpListItem />
-</div>
+import Decoration from "../../atoms/decoration/decoration";
+import WhoWeHelpButtons from "../../molecules/whoWeHelpButtons/whoWeHelpButtons";
+import WhoWeHelpList from "../../molecules/whoWeHelpList/whoWeHelpList";
+const WhoWeHelp = ({ whoWeHelpTitle }) => (
+  <div id="help" className="who-we-help">
+    <h3 className="who-we-help-title">{whoWeHelpTitle} </h3>
+    <Decoration />
+    <WhoWeHelpButtons />
+    <WhoWeHelpList />
+  </div>
+);
 
 export default WhoWeHelp;

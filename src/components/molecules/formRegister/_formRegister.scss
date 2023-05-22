@@ -1,0 +1,62 @@
+@import '../../../scss/settings/fonts';
+@import '../../../scss/settings/colors';
+@import '../../../scss/settings/otherVariables';
+
+.registerForm {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__Box {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: space-evenly;
+        padding: 40px 67.25px;
+        background-color: $white-color;
+
+        .contactUsInput {
+            background-color: $white-color;
+        }
+
+        .divForm {
+            .contactUsInput {
+                height: 40px;
+            }
+        }
+
+        .divForm:nth-child(2),
+        .divForm:nth-child(3) {
+            margin-top: 31px;
+        }
+    }
+
+    &__Row {
+        width: 504px;
+        margin-top: 40px;
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__Link {
+        font-style: normal;
+        font-family: $font-base;
+        font-weight: 300;
+        font-size: 18px;
+        color: $black-color;
+        text-decoration: none;
+    }
+
+    &__button {
+        font-family: $font-base;
+        font-size: 18px;
+        color: $black-color;
+        font-weight: 300;
+        padding: 13px 16px;
+        background-color: white;
+        border: $border;
+    }
+}

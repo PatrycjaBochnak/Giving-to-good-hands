@@ -1,0 +1,31 @@
+@import '../../../scss/settings/colors';
+@import '../../../scss/settings/fonts';
+@import '../../../scss/settings/otherVariables';
+
+.who-do-you-want-to-help-button-list {
+    z-index: 1;
+    width: 680px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    .who-do-you-want-list-item {
+        margin-right: 24px;
+        margin-bottom: 24px;
+
+        .who-do-you-want-button {
+            font-size: 24px;
+            font-weight: 300;
+            font-family: $font-base;
+            padding: 11px 26px;
+            border: $border;
+            background: none;
+        }
+    }
+
+    .who-do-you-want-list-item:nth-child(5) {
+        margin-right: 0;
+    }
+
+}

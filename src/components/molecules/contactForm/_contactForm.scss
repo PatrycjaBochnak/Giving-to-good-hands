@@ -1,0 +1,56 @@
+@import "../../atoms/inputContactForm/inputContactForm";
+@import "../../atoms/textInAreaInput/textInAreaInput";
+
+@import "../../../scss/settings/colors";
+@import "../../../scss/settings/fonts";
+@import "../../../scss/settings/otherVariables";
+
+.contact-form {
+  width: 528px;
+  display: flex;
+  flex-direction: column;
+
+  .input-error {
+    margin-top: 50px;
+    color: red;
+    font-family: $font-base;
+    font-weight: bold;
+  }
+
+  &-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+
+    .div-form {
+      &-label {
+        margin-bottom: 12px;
+      }
+
+      &:nth-child(1) {
+        margin-right: 16px;
+      }
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        width: 256px;
+      }
+
+      &:nth-child(3) {
+        height: 400px;
+      }
+    }
+  }
+
+  &-button {
+    font-family: $font-base;
+    font-weight: 300px;
+    font-size: 18px;
+    color: $black-color;
+    padding: 13px 53px;
+    width: 156px;
+    align-self: flex-end;
+    border: $border;
+    background-color: white;
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../../scss/settings/colors';
+@import '../../../scss/settings/fonts';
+@import '../../../scss/settings/otherVariables';
+@import '../contactForm/contactForm';
+
+.contact {
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 27%;
+    }
+
+    &-form-title {
+        margin-top: 10%;
+        font-family: $font-base;
+        font-size: 38px;
+        letter-spacing: -0.76px;
+    }
+
+    .decoration {
+        align-self: auto;
+    }
+}

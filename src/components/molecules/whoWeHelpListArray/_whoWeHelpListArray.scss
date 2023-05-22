@@ -1,0 +1,32 @@
+@import '../../atoms/whoWeHelpListItem/whoWeHelpListItem';
+@import '../../../scss/settings/fonts';
+@import '../../../scss/settings/colors';
+@import '../../../scss/settings/otherVariables';
+
+.divPag {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    margin: 0 calc(50% - 100px);
+    margin-top: 50px;
+
+    .nextBtn,
+    .prevBtn,
+    .pagesBtn {
+        font-family: $font-base;
+        padding: 5px 10px;
+        border: $blind-border;
+    }
+
+    .nextBtn:hover,
+    .prevBtn:hover,
+    .pagesBtn:hover {
+        border: $border;
+    }
+
+    .activeBtn {
+        border: $border;
+    }
+}

@@ -41,15 +41,15 @@ export const MainPageDatabaseProvider = ({ children }) => {
     setValue(v)
     switch (v) {
       case 'foundation': {
-        setName('Fundacji')
+        setName('Foundations')
         break
       }
       case 'governmentalOrganizations': {
-        setName('Organizacji pozarządowych')
+        setName('Non-governmental organisations')
         break
       }
       case 'localCollections': {
-        setName('Lokalnych zbiórek')
+        setName('Local collections')
         break
       }
     }

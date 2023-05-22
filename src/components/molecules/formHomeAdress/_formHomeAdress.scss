@@ -1,0 +1,49 @@
+@import '../../../scss/settings/colors';
+@import '../../../scss/settings/fonts';
+@import '../../../scss/settings/otherVariables';
+
+.formHomeAdress {
+    width: 392px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+    .title {
+        font-family: $font-base;
+        font-weight: 600;
+        font-size: 24px;
+        align-self: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .formHomeAdressRow {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .inputAdress {
+            height: 40px;
+            width: 256px;
+            background: none;
+            border: $border;
+        }
+
+        .textArea{
+            height: 120px;
+        }
+
+        .labelAdress {
+            width: 110px;
+            text-align: left;
+            font-family: $font-base;
+            font-weight: 100;
+            font-size: 24px;
+        }
+    }
+
+    .formHomeAdressRow:nth-child(5) {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,47 @@
+@import '../../../scss/settings/colors';
+@import '../../../scss/settings/fonts';
+@import '../../../scss/settings/otherVariables';
+
+.footer {
+    align-self: center;
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    
+
+    &__text {
+        font-family: $font-base;
+        font-size: 18px;
+        color: $black-color;
+        align-self: center;
+        margin-left: 45%;
+    }
+
+    &__media {
+        display: flex;
+        flex-direction: row;
+        margin-right: 149px;
+
+
+        .media__button {
+            width: 30px;
+            height: 30px;
+        }
+
+        .facebook {
+            background: url('../../../assets/Facebook.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 20px;
+        }
+
+        .instagram {
+            background: url('../../../assets/Instagram.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
