@@ -1,0 +1,23 @@
+@import '../../../scss/settings/colors';
+@import '../../../scss/settings/fonts';
+@import '../../../scss/settings/otherVariables';
+
+
+.intro-row {
+    padding: 50px 670px 50px 147px;
+    background-color: $strong-yellow-color;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &-title {
+        font-family: $font-base;
+        font-weight: 600;
+        font-size: 36px;
+    }
+
+    &-text {
+        font-family: $font-base;
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,16 @@
+@import "../../../scss/settings/colors";
+@import "../../../scss/settings/fonts";
+
+.intro-header {
+  margin-top: 134px;
+  margin-right: 279px;
+  width: 663px;
+  height: 455px;
+}
+.intro-header-text {
+  margin-top: 20px;
+  font-family: $font-base;
+  font-weight: 300;
+  font-size: 40px;
+  color: $black-color;
+}

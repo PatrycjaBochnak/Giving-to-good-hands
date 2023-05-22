@@ -1,0 +1,31 @@
+@import '../../../scss/settings/colors';
+@import '../../../scss/settings/fonts';
+@import '../../../scss/settings/otherVariables';
+
+
+.row-contact-us-label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .contact-us-label {
+        margin-bottom: 12px;
+        margin-top: 44px;
+        font-family: $font-base;
+        font-size: 16px;
+        font-weight: 600;
+        color: $black-color;
+
+    }
+
+    .contact-us-text-area {
+        width: 100%;
+        height: 97px;
+        margin-bottom: 44px;
+        border: 0;
+        border-bottom: $border;
+        opacity: 50%;
+    }
+
+
+}

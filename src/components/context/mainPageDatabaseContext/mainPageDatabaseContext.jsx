@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react'
-import supabase from '../../config/supabaseClient'
+import supabase from '../../../config/supabaseClient'
 
 const MainPageDatabaseContext = createContext()
 
