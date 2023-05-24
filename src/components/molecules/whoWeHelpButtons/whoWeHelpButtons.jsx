@@ -7,3 +7,5 @@ const WhoWeHelpButtons = () =>
     <WhoWeHelpButton value='localCollections' titleButton='Local Collections' />
     <WhoWeHelpButton value='non-governmentalOrganizations' titleButton='Non-governmental Organizations' />
 </form>
+
+export default WhoWeHelpButtons

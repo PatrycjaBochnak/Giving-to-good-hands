@@ -4,7 +4,7 @@
 /* eslint-disable react/prop-types */
 import React, { createContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import supabase from '../../config/supabaseClient'
+import supabase from '../../../config/supabaseClient'
 
 const LogInLogOutRegisterDatabaseContext = createContext()
 

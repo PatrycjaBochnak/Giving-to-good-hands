@@ -1,22 +1,23 @@
 import React from 'react'
 import RowForm from '../../components/atoms/rowForm/rowForm'
 import FormSteps from '../../components/organisms/formSteps/formSteps'
-import HeaderStepsView from '../../components/organisms/headerStepsView/headerStepsView'
-import ContactUs from '../../components/organisms/contactUs/contactUs'
-import { DatabaseProvider } from '../../components/context/giveThingsBackDatabaseContext'
-import { LogInLogOutRegisterDatabaseProvider } from '../../components/context/logInLogOutRegisterDatabaseContext'
-import { MainPageDatabaseProvider } from '../../components/context/mainPageDatabaseContext'
+import HeaderSteps from '../../components/organisms/headerSteps/headerSteps'
+import Contact from '../../components/organisms/contact/contact'
+import { DatabaseProvider } from '../../components/context/giveThingsBackDatabaseContext/giveThingsBackDatabaseContext'
+import { LogInLogOutRegisterDatabaseProvider } from '../../components/context/logInLogOutRegisterDatabaseContext/logInLogOutRegisterDatabaseContext'
+import { MainPageDatabaseProvider } from '../../components/context/mainPageDatabaseContext/mainPageDatabaseContext'
+
 const StepsView = () =>
   <div className='steps-page'>
     <LogInLogOutRegisterDatabaseProvider>
-      <HeaderStepsView />
+      <HeaderSteps />
     </LogInLogOutRegisterDatabaseProvider>
     <DatabaseProvider>
       <RowForm />
       <FormSteps />
     </DatabaseProvider>
     <MainPageDatabaseProvider>
-      <ContactUs />
+      <Contact />
     </MainPageDatabaseProvider>
   </div>
 

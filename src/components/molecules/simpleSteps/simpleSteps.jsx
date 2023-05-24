@@ -1,5 +1,6 @@
 import React from "react";
-import SimpleStepsColumn from "../../atoms/simpleStepsColumn";
+import SimpleStepsColumn from "../../atoms/simpleStepsColumn/simpleStepsColumn";
+
 import Icon1 from "../../../assets/Icon1.png"
 import Icon2 from "../../../assets/Icon2.png"
 import Icon3 from "../../../assets/Icon3.png"

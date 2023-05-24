@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import InputContactForm from "../../atoms/inputContactForm";
-import TextInAreaInput from "../../atoms/textInAreaInput";
+import InputContactForm from "../../atoms/inputContactForm/inputContactForm";
+import TextInAreaInput from '../../atoms/textInAreaInput/textInAreaInput'
 import MainPageDatabaseProvider from "../../context/mainPageDatabaseContext/mainPageDatabaseContext";
 
 const ContactForm = () => {

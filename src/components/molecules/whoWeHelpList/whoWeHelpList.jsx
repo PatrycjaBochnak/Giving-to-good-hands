@@ -8,3 +8,5 @@ const WhoWeHelpList = () =>
     </p>
     <WhoWeHelpListArray />
 </div>
+
+export default WhoWeHelpList

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import ReactPaginate from "react-paginate";
 import WhoWeHelpListItem from "../../atoms/whoWeHelpListItem/whoWeHelpListItem";
-import MainPageDatabaseContext from "../../context/mainPageDatabaseContext/mainPageDatabaseContext";
+import MainPageDatabaseProvider from "../../context/mainPageDatabaseContext/mainPageDatabaseContext";
 
 const WhoWeHelpListArray = () => {
   const { database, arrayPaginate, pagesVisited, itemsPerPages, changePage } =

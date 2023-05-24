@@ -1,11 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import supabase from '../../config/supabaseClient'
-import FormStepOne from '../molecules/formSteps/formStepOne/formStepOne'
-import FormStepSec from '../molecules/formSteps/formStepSec/formStepSec'
-import FormStepThr from '../molecules/formSteps/formStepThr/formStepThr'
-import FormStepFour from '../molecules/formSteps/formStepFour/formStepFour'
-import FormStepFive from '../molecules/formSteps/formStepsFive/formStepsFive'
+import supabase from '../../../config/supabaseClient'
 
 const DatabaseContext = createContext()
 
@@ -37,15 +32,15 @@ export const DatabaseProvider = ({ children }) => {
     if (step !== 1) { setNowSteps(step -= 1) }
   }
 
-  useEffect(() => {
-    switch (nowSteps) {
-      case 1: setToDonateForm(<FormStepOne />); break
-      case 2: setToDonateForm(<FormStepSec />); break
-      case 3: setToDonateForm(<FormStepThr />); break
-      case 4: setToDonateForm(<FormStepFour />); break
-      case 5: setToDonateForm(<FormStepFive />); break
-    }
-  }, [nowSteps])
+//   useEffect(() => {
+//     switch (nowSteps) {
+//       case 1: setToDonateForm(<FormStepOne />); break
+//       case 2: setToDonateForm(<FormStepSec />); break
+//       case 3: setToDonateForm(<FormStepThr />); break
+//       case 4: setToDonateForm(<FormStepFour />); break
+//       case 5: setToDonateForm(<FormStepFive />); break
+//     }
+//   }, [nowSteps])
   const arrowValueList = [1, 2, 3, 4, 5]
   const cityValueList = ['Poznan', 'Warsaw', 'Cracow', 'Wroclaw', 'Katowice']
   const listFormStepHandle = (e) => {
