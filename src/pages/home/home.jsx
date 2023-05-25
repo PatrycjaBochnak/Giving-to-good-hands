@@ -1,6 +1,6 @@
 import React from "react";
 import HomeThreeColumns from "../../components/organisms/homeThreeColumns/homeThreeColumns";
-import SimpleStepsBar from '../../components/organisms/simpleStepsBar/simpleStepsBar'
+import SimpleStepsBar from '../../components/organisms/simpleStepsBar'
 import Contact from "../../components/organisms/contact/contact";
 import AboutUs from "../../components/organisms/aboutUs/aboutUs";
 import Header from "../../components/organisms/header/header";
